@@ -57,7 +57,7 @@ for { value <- data } {
 ```
 
 ### XML
-Given the file config.xml contains "<config><port>8080</port></config>"
+Given the file config.xml contains "&lt;config>&lt;port>8080&lt;/port>&lt;/config>"
 
 ```
 val config = embed[scala.xml.Elem]("config.xml")
