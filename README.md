@@ -12,4 +12,4 @@ val xml = embed[Elem]("config.xml")
 val arr = embed[Array[Byte]]("data")
 ```
 
-The path is always relative to the compilation unit. `embed[String]("file.txt")` for `.\src\main\scala\foo\Bar.scala` will search for `.\src\main\scala\foo\file.txt`.
+The path is always relative to the compilation unit. `embed[String]("file.txt")` inside `.\src\main\scala\foo\Bar.scala` will search for `.\src\main\scala\foo\file.txt`.
