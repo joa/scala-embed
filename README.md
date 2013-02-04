@@ -14,8 +14,8 @@ val arr = embed[Array[Byte]]("data")
 
 The path is always relative to the compilation unit. `embed[String]("file.txt")` inside `.\src\main\scala\foo\Bar.scala` will search for `.\src\main\scala\foo\file.txt`.
 
-# Examples
-## String
+## Examples
+### String
 Given the file hello_world.txt contains the String "Hello World"
 
 ```
@@ -30,7 +30,7 @@ val message = "Hello World"
 println(message)
 ```
 
-## Array[Byte]
+### Array[Byte]
 Given the file data.raw contains three bytes 0xff, 0x80, 0x00
 
 ```
@@ -56,7 +56,7 @@ for { value <- data } {
 }
 ```
 
-## XML
+### XML
 Given the file config.xml contains "<config><port>8080</port></config>"
 
 ```
